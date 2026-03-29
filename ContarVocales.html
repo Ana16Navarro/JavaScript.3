@@ -1,0 +1,16 @@
+<h1> Consola del navegador</h1>
+<script>
+    function contarVocales(texto){
+        let contador = 0;
+        for ( let i = 0; i < texto.length; i++){
+            let letra = texto[i].toLowerCase();
+            if ("aeiou".includes(letra)){
+                contador++;
+            }
+        }
+        return contador;
+    }
+    console.log(contarVocales("Hola Mundo"));
+    console.log(contarVocales("JavaScript"));
+    console.log(contarVocales("aeiou AEIOU"));
+</script>

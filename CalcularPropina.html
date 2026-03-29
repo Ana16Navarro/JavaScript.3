@@ -1,0 +1,15 @@
+<h1>Consola del navegador</h1>
+<script>
+    function calculadoraPropina(cuenta, propina){
+        if (propina < 0){
+            return "Porcentaje invalido";
+        }
+        const soloPropina = cuenta * (propina/100);
+        const soloTotal = cuenta + soloPropina;
+        return `Propina de $${Propina} | Total $${Total}`;
+    }
+    console.log(calculadoraPropina(50000,10));
+    console.log(calculadoraPropina(80000,15));
+    console.log(calculadoraPropina(120000,25));
+    console.log(calculadoraPropina(50000,-12));
+</script>

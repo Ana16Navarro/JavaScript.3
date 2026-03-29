@@ -1,0 +1,17 @@
+<h1>Consola la navegador</h1><
+<script>
+    function saludar (nombre, momento){
+        if(momento === "Mañana" ){
+            return `¡Buenos días, ${nombre}!!`;
+        }else if(momento === "Tardes"){
+            return `¡Buenas tardes, ${nombre}!!`;
+        }else if(momento === "Noches"){
+            return `¡Buenas noches, ${nombre}!!`;
+        }else{
+            return`No valido`;
+        }
+    }
+    console.log(saludar("Emely", "Mañana"));
+    console.log(saludar("Sofia", "Tardes"));
+    console.log(saludar("David", "Noches"));
+</script>
